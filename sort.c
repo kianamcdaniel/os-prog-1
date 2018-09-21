@@ -32,10 +32,14 @@ int main(){
         }
     }*/
     
+    printf("I'm here 1");
+    
     for(int i = 0; i < 3; i++){
         scanf("%s", name[i]);
         count++;
     }
+    
+    printf("I'm here 2");
     
     for(int i = 0; i < count; i++){
         for(int j = 0; j < 2; j++){
