@@ -14,10 +14,11 @@ int main(){
     int count = 0;
     
     do {
-        scanf("%s", name[count]);
+        if(count < 10){
+            scanf("%s", name[count]);
+        }
         if (strcmp(name[count], "0") != 0)
             count++;
-        printf("String that was entered: %s", name[count]);
     } while (strcmp(name[count], "0") != 0);
     
     
