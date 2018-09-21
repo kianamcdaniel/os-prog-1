@@ -13,13 +13,13 @@ int main(){
     char temp[2];
     int count = 0;
     
-    do {
+    /*do {
         if(count < 10){
             scanf("%s", name[count]);
         }
         if (strcmp(name[count], "0") != 0)
             count++;
-    } while (strcmp(name[count], "0") != 0);
+    } while (strcmp(name[count], "0") != 0);*/
     
     
     /*for(int i = 0; i < (count - 1); i++){
@@ -31,6 +31,11 @@ int main(){
             }
         }
     }*/
+    
+    for(int i = 0; i < 3; i++){
+        scanf("%s", name[i]);
+        count++;
+    }
     
     for(int i = 0; i < count; i++){
         for(int j = 0; j < 2; j++){
