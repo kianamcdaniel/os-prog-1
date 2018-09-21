@@ -31,10 +31,8 @@ int main(){
     }
     
     for(int i = 0; i < count; i++){
-        for(int j = 0; j < 2; j++){
-            printf("%c", name[i][j]);
-            printf("\n");
-        }
+        printf("%c", name[i]);
+        printf("\n");
     }
     
     
