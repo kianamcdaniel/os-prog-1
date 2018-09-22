@@ -21,7 +21,7 @@ int main(){
             count++;
     } while (strcmp(name[count], "0") != 0);
     
-    for(int i = 0; i < (count - 1); i++){
+    /*for(int i = 0; i < (count - 1); i++){
         printf("this is first string: %s \n", name[i]);
         for(int j = i + 1; j < count; j++){
             printf("this is 2nd string: %s \n", name[j]);
@@ -31,13 +31,17 @@ int main(){
                 strcpy(name[j], temp);
             }
         }
-    }
+    }*/
     
     for(int i = 0; i < count; i++){
         for(int j = 0; j < 2; j++){
             printf("%c", name[i][j]);
         }
         printf("\n");
+    }
+    
+    for(int i = 0; i < count; i++{
+        puts(name[i]);
     }
 }
 
