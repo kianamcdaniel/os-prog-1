@@ -19,7 +19,7 @@ int main(){
     
     printf("%d", count); 
     
-    for(int i = 0; i < 2; i++){
+    /*for(int i = 0; i < 2; i++){
         for(int j = i + 1; j < 3; j++){
             if(strcmp(name[i], name[j]) > 0){
                 strcpy(temp, name[i]);
@@ -27,7 +27,7 @@ int main(){
                 strcpy(name[j], temp);
             }
         }
-    }
+    }*/
     
     for(int i = 0; i < count; i++){
         printf("%s", name[i]);
