@@ -22,8 +22,8 @@ int main(){
         printf("%s", name[i]);
     }
     
-    for(int i = 0; i < (count - 1); i++){
-        for(int j = i + 1; j < count; j++){
+    for(int i = 0; i < (count - 1); ++i){
+        for(int j = i + 1; j < count; ++j){
             if(strcmp(name[i], name[j]) > 0){
                 strcpy(temp, name[i]);
                 strcpy(name[i], name[j]);
