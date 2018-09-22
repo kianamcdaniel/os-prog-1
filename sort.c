@@ -13,7 +13,7 @@ int main(){
     char temp[2];
     int count = 0;
     
-    while(fgets(name[count], sizeof(name[count]), stdin)
+    while(fgets(name[count], 2, stdin)
           && (strcmp(name[count], "0") !=0 ) && count < 10){
         count++;
     }
