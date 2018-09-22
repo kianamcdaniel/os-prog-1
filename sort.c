@@ -21,7 +21,7 @@ int main(){
             count++;
     } while (strcmp(name[count], "0") != 0);*/
     
-    printf("yeah I'm here);
+    printf("yeah I'm here");
            
     for(int i = 0; i < 3; i++){
         scanf("%s", name[i]);
