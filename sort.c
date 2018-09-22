@@ -18,8 +18,8 @@ int main(){
         count++;
     }
     
-    for(int i = 0; i < (count - 1); ++i){
-        for(int j = i + 1; j < count; ++j){
+    for(int i = 0; i < (count - 1); i++){
+        for(int j = i + 1; j < count; j++){
             if(strcmp(name[i], name[j]) > 0){
                 strcpy(temp, name[i]);
                 strcpy(name[i], name[j]);
@@ -28,8 +28,8 @@ int main(){
         }
     }
     
-    for(int i = 0; i < count; ++i){
-        puts(name[i]);
+    for(int i = 0; i < count; i++){
+        printf("%s", name[i];
     }
 }
 
