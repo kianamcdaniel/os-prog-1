@@ -18,7 +18,7 @@ int main(){
         count++;
     }
     
-    for(int i = 0; i < (count - 1); ++i){
+    /*for(int i = 0; i < (count - 1); ++i){
         for(int j = i + 1; j < count; ++j){
             if(strcmp(name[i], name[j]) > 0){
                 strcpy(temp, name[i]);
@@ -26,7 +26,7 @@ int main(){
                 strcpy(name[j], temp);
             }
         }
-    }
+    }*/
     
     for(int i = 0; i < count; ++i){
         printf("%s", name[i]);
