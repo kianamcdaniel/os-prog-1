@@ -19,9 +19,7 @@ int main(){
     }
     
     for(int i = 0; i < (count - 1); i++){
-        printf("this is first string: %s \n", name[i]);
         for(int j = i + 1; j < count; j++){
-            printf("this is 2nd string: %s \n", name[j]);
             if(strcmp(name[i], name[j]) > 0){
                 strcpy(temp, name[i]);
                 strcpy(name[i], name[j]);
@@ -31,7 +29,7 @@ int main(){
     }
     
     for(int i = 0; i < count; i++){
-        printf("%c", name[i]);
+        printf("%s", name[i]);
     }
     
     /*for(int i = 0; i < count; i++){
