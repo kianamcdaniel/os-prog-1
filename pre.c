@@ -28,7 +28,7 @@ int main()
         scanf("%d", &arr_states[count].population);
         count++;
     }
-    
+    printf("%d", count);
     printf("\n\nHere are the states whose population are greater than 10 million:\n\n");
 	
     for(int i = 0; i < count; i++)
