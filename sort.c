@@ -16,11 +16,9 @@ int main(){
     while(scanf("%2s", name[count]) && (strcmp(name[count], "0") != 0) && count < 10){
         count++;
     }
-    
-    printf("%d", count); 
-    
-    for(int i = 0; i < 2; i++){
-        for(int j = i + 1; j < 3; j++){
+        
+    for(int i = 0; i < count - 1; i++){
+        for(int j = i + 1; j < count; j++){
             if(strcmp(name[i], name[j]) > 0){
                 strcpy(temp, name[i]);
                 strcpy(name[i], name[j]);
