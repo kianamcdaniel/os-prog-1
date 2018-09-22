@@ -15,11 +15,11 @@ int main(){
     
     do {
         if(count < 10){
-            scanf("%s", name[count]);
+            scanf("%s", name[count][2]);
         }
-        if (strcmp(name[count], "0") != 0)
+        if (strcmp(name[count][2], "0") != 0)
             count++;
-    } while (strcmp(name[count], "0") != 0);
+    } while (strcmp(name[count][2], "0") != 0);
     
     /*for(int i = 0; i < (count - 1); i++){
         printf("this is first string: %s \n", name[i]);
