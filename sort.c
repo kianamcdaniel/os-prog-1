@@ -33,7 +33,8 @@ int main(){
     }
     
     for(int i = 0; i < count; i++){
-        printf("%s", name[i]);
+        printf("%s \n", name[i]);
+        
     }
     
     /*for(int i = 0; i < count; i++){
