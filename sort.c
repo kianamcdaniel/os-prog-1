@@ -29,7 +29,7 @@ int main(){
     }*/
     
     for(int i = 0; i < (count - 1); i++){
-        for(int j = i + 1; j < 10; j++){
+        for(int j = i + 1; j < count; j++){
             if(strcmp(name[i], name[j]) > 0){
                 strcpy(temp, name[i]);
                 strcpy(name[i], name[j]);
@@ -38,7 +38,7 @@ int main(){
         }
     }
     
-    for(int i = 1; i < count; i++){
+    for(int i = 0; i < count; i++){
         for(int j = 0; j < 2; j++){
             printf("%c", name[i][j]);
         }
