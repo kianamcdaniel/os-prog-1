@@ -40,7 +40,7 @@ int main(){
         printf("\n");
     }
     
-    for(int i = 0; i < count; i++{
+    for(int i = 0; i < count; i++){
         puts(name[i]);
     }
 }
