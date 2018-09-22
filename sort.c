@@ -18,6 +18,8 @@ int main(){
         count++;
     }
     
+    printf("%d", count); 
+    
     for(int i = 0; i < (count - 1); i++){
         for(int j = i + 1; j < count; j++){
             printf("%s %s \n", name[i], name[j]); 
