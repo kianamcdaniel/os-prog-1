@@ -9,7 +9,7 @@
 #include <string.h>
 
 int main(){
-    char name[10][2];
+    char name[10][3];
     char temp[2];
     int count = 0;
     
