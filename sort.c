@@ -9,17 +9,18 @@
 #include <string.h>
 
 int main(){
-    char name[10][2];
+    int MAX = 2;
+    char name[10][MAX];
     char temp[2];
     int count = 0;
     
     do {
         if(count < 10){
-            scanf("%s", name[count][2]);
+            scanf("%s", name[count][MAX]);
         }
-        if (strcmp(name[count][2], "0") != 0)
+        if (strcmp(name[count][MAX], "0") != 0)
             count++;
-    } while (strcmp(name[count][2], "0") != 0);
+    } while (strcmp(name[count][MAX], "0") != 0);
     
     /*for(int i = 0; i < (count - 1); i++){
         printf("this is first string: %s \n", name[i]);
