@@ -22,6 +22,7 @@ int main(){
         exit(1);
     }
     else if(pid == 0){                      //child
+        printf("I'm in child");
         close(1);
         dup(p[1]);                          //redirect std output
         close(p[0]);                        //closes read-descriptor
@@ -31,6 +32,7 @@ int main(){
         exit(0);
     }
     else{                                   //parent
+        printf("I'm in parent");
         close(0);
         dup(p[0]);                          //redirect std input
         close(p[0]);                        //closes read-descriptor
