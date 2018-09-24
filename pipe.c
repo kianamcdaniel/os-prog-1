@@ -12,6 +12,7 @@
 #include <stdlib.h>
 
 int main(){
+printf("im at beginning");
     int p[2];
     pid_t pid;
     pipe(p);
