@@ -26,8 +26,9 @@ int main(){
         dup(p[1]);                          //redirect std output
         close(p[0]);                        //closes read-descriptor
         close(p[1]);                        //closes write-descriptor
-        perror("execl() failed!");
         execl("./pre.c", "pre.c", (char *)0);
+        perror("execl() failed!");
+        exit(0);
     }
     else{                                   //parent
         close(0);
