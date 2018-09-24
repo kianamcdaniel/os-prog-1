@@ -27,7 +27,7 @@ int main(){
         }
     }
     
-    for(int i = 5; i < count - 1; i++){
+    for(int i = 7; i < count - 1; i++){
         printf("%s", name[i]);
         printf("\n");
     }
