@@ -16,6 +16,8 @@ int main(){
     while(scanf("%2s", name[count]) && (strcmp(name[count], "0") != 0) && count < 10){
         count++;
     }
+    
+    printf("%d \n", count);
         
     for(int i = 0; i < count - 1; i++){
         for(int j = i + 1; j < count; j++){
