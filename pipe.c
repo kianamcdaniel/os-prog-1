@@ -14,6 +14,8 @@
 int main(){
     int p[2];
     pid_t pid;
+    char string[] = "hello bitches!\n"
+    char readbuffer[80];
     pipe(p);
     pid = fork();
     
@@ -28,6 +30,8 @@ int main(){
         close(p[1]);                        //closes write-descriptor
         perror("execl() failed!");
         execl("./pre.c", "pre.c", (char *)0);
+        write(p[1], string, (strlen(string)+1));
+        exit(0);
     }
     else{                                   //parent
         close(0);
@@ -35,5 +39,7 @@ int main(){
         close(p[0]);                        //closes read-descriptor
         close(p[1]);                        //closes write-descriptor
         execl("./sort.c", "sort.c", (char *)0);
+        nbytes = read(fd[0], readbuffer, sizeof(readbuffer));
+        printf("Received string: %s", readbuffer);
     }
 }
