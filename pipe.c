@@ -12,7 +12,6 @@
 #include <stdlib.h>
 
 int main(){
-printf("im at beginning");
     int p[2];
     pid_t pid;
     pipe(p);
@@ -21,12 +20,10 @@ printf("im at beginning");
     printf("I'm outside if's");
     
     if(pid < 0){                            //error
-        printf("In error"); 
         perror("fork");
         exit(1);
     }
     else if(pid == 0){                      //child
-        printf("I'm in child");
         close(1);
         dup(p[1]);                          //redirect std output
         close(p[0]);                        //closes read-descriptor
@@ -36,7 +33,6 @@ printf("im at beginning");
         exit(0);
     }
     else{                                   //parent
-        printf("I'm in parent");
         close(0);
         dup(p[0]);                          //redirect std input
         close(p[0]);                        //closes read-descriptor
