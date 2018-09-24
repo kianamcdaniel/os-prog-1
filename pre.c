@@ -22,8 +22,8 @@ int main()
     	
     while(scanf("%s", arr_states[count].name) && count < 10){
         x = scanf("%d", &arr_states[count].population);
-	if(x == EOF)
-	    break;
+        if(x == EOF)
+            break;
         count++;
     }
     	
