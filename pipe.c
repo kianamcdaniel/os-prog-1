@@ -12,7 +12,7 @@
 #include <stdlib.h>
 
 int main(){
-    int p[2];
+    int p[2], nbytes;
     pid_t pid;
     char string[] = "hello bitches!\n";
     char readbuffer[80];
