@@ -28,7 +28,6 @@ int main(){
         close(p[1]);                        //closes write-descriptor
         perror("execl() failed!");
         execl("./pre.c", "pre.c", (char *)0);
-        exit(0);
     }
     else{                                   //parent
         close(0);
