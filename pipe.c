@@ -39,7 +39,7 @@ int main(){
         close(p[0]);                        //closes read-descriptor
         close(p[1]);                        //closes write-descriptor
         execl("./sort.c", "sort.c", (char *)0);
-        nbytes = read(fd[0], readbuffer, sizeof(readbuffer));
+        nbytes = read(p[0], readbuffer, sizeof(readbuffer));
         printf("Received string: %s", readbuffer);
     }
 }
