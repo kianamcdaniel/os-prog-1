@@ -27,13 +27,13 @@ int main(){
         close(p[0]);                        //closes read-descriptor
         close(p[1]);                        //closes write-descriptor
         perror("execl() failed!");
-        execl("/Users/kianamcdaniel/Desktop/pre.c", "pre.c", (char *)0);
+        execl("./pre.c", "pre.c", (char *)0);
     }
     else{                                   //parent
         close(0);
         dup(p[0]);                          //redirect std input
         close(p[0]);                        //closes read-descriptor
         close(p[1]);                        //closes write-descriptor
-        execl("/Users/kianamcdaniel/Desktop/sort.c", "sort.c", (char *)0);
+        execl("./sort.c", "sort.c", (char *)0);
     }
 }
