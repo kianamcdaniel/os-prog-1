@@ -30,5 +30,5 @@ int main()
             printf("%s \n", arr_states[i].name);
         }
     }
-    printf("0");
+    printf("^D");
 }
