@@ -2,7 +2,7 @@
 
 hello!
 
-please follow the steps below to run my program & check it's functionality! 
+********* please follow the steps below to run my **pipe.c** program & check it's functionality! ********* 
 
 1) ssh into zeus.cs.txstate.edu 
 2) cd into the directory that my program's .c files are saved
@@ -29,4 +29,14 @@ please follow the steps below to run my program & check it's functionality!
         - 0
 
 8) once **ctrl+d** is pressed **TWICE**, a list of states whose population is greater than 10 million will appear. The states will be sorted in alphabetical order. 
+
+********* please follow the steps below to run my **ls.c** program & check it's functionality! ********* 
+
+1) ssh into zeus.cs.txstate.edu
+2) cd into the directory that my program's .c file is saved
+3) enter the command: gcc ls.c -o ls
+    - this compiles ls.c
+4) enter the command: ./ls ls -t -l
+    - this will run ls.c 
+5) the program will then execute the command 'ls -t -l' and print the child PID and parent PID. 
     
