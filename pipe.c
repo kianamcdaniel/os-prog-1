@@ -29,7 +29,7 @@ int main(){
         close(p[0]);                        //closes read-descriptor
         close(p[1]);                        //closes write-descriptor
         perror("execl() failed!");
-        execl("./pre.c", "pre.c", (char *)0);
+        //execl("./pre.c", "pre.c", (char *)0);
         write(p[1], string, (strlen(string)+1));
         exit(0);
     }
@@ -38,7 +38,7 @@ int main(){
         dup(p[0]);                          //redirect std input
         close(p[0]);                        //closes read-descriptor
         close(p[1]);                        //closes write-descriptor
-        execl("./sort.c", "sort.c", (char *)0);
+        //execl("./sort.c", "sort.c", (char *)0);
         nbytes = read(p[0], readbuffer, sizeof(readbuffer));
         printf("Received string: %s", readbuffer);
     }
