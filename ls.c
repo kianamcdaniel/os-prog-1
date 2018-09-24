@@ -31,7 +31,6 @@ int main (int argc, char *argv[]){
     }
     else{
         wait(NULL);
-        printf("Child has terminated\n");
         printf("Child PID: %d\n", getpid());
         printf("Parent PID: %d\n", getppid());
     }
