@@ -14,7 +14,7 @@
 int main(){
     int p[2];
     pid_t pid;
-    char string[] = "hello bitches!\n"
+    char string[] = "hello bitches!\n";
     char readbuffer[80];
     pipe(p);
     pid = fork();
