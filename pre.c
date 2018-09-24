@@ -20,7 +20,7 @@ int main()
     int count = 0;
     	
     while(scanf("%s", arr_states[count].name)
-          && (strcmp(arr_states[count].name, "0") != 0) && count < 10){
+          && (strcmp(arr_states[count].name, "^D") != 0) && count < 10){
         scanf("%d", &arr_states[count].population);
         count++;
     }
