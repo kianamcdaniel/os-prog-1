@@ -17,8 +17,6 @@ int main(){
     pipe(p);
     pid = fork();
     
-    printf("I'm outside if's");
-    
     if(pid < 0){                            //error
         perror("fork");
         exit(1);
