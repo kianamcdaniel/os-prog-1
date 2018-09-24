@@ -23,14 +23,14 @@ int main (int argc, char *argv[]){
     int flag = 1;
     pid_t pid;
     
+    printf("Enter the command 'ls -t -l': ");
+    scanf("%s %s %s", command->name, command->argv[1], command->argv[2]);
+    printf("%s %s %s", command->name, command->argv[1], command->argv[2]);
+    
+    pid = fork();
+    
     if(pipe(p) == -1){
         perror("pipe call");
         exit(1);
     }
-    
-    pid = fork();
-    
-    printf("Enter the command 'ls -t -l': ");
-    scanf("%s %s %s", command->name, command->argv[1], command->argv[2]);
-    printf("%s %s %s", command->name, command->argv[1], command->argv[2]);
 }
