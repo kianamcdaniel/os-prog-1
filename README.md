@@ -22,11 +22,11 @@ please follow the steps below to run my program & check it's functionality!
     - to enter another input simply press 'return' key and enter the information
     - once you are done entering the information press '0'
     - Input looks something like this: 
-        TX 189
-        FL 20
-        GA 1
-        AL 100
-        0
+        - TX 189
+        - FL 20
+        - GA 1
+        - AL 100
+        - 0
 
 8) once '0' is pressed, a list of states whose population is greater than 10 million will appear. The states will be sorted in alphabetical order. 
     
