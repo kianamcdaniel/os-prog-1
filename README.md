@@ -26,7 +26,6 @@ hello!
         - FL 20
         - GA 1
         - AL 100
-        - 0
 
 8) once **ctrl+d** is pressed **TWICE**, a list of states whose population is greater than 10 million will appear. The states will be sorted in alphabetical order. 
 
