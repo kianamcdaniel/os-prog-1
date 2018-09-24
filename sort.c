@@ -13,7 +13,7 @@ int main(){
     char temp[2];
     int count = 0;
     
-    while(scanf("%2s", name[count]) && (strcmp(name[count], "0") != 0) && count < 10){
+    while(scanf("%2s", name[count]) && (strcmp(name[count], "^D") != 0) && count < 10){
         count++;
     }
         
