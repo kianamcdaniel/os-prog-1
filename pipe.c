@@ -30,7 +30,7 @@ int main(){
         dup(p[1]);                          //redirect std output
         close(p[0]);                        //closes read-descriptor
         close(p[1]);                        //closes write-descriptor
-        execl("./pre", "pre.c", (char *)0);
+        execl("./pre", "pre", (char *)0);
         perror("execl() failed!");
         exit(0);
     }
@@ -40,6 +40,6 @@ int main(){
         dup(p[0]);                          //redirect std input
         close(p[0]);                        //closes read-descriptor
         close(p[1]);                        //closes write-descriptor
-        execl("./sort", "sort.c", (char *)0);
+        execl("./sort", "sort", (char *)0);
     }
 }
