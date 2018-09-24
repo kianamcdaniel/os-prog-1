@@ -18,10 +18,12 @@ int main()
 {
     struct state arr_states[10];
     int count = 0;
+    int x;
     	
-    while(scanf("%s", arr_states[count].name)
-          && (strcmp(arr_states[count].name, "^D") != 0) && count < 10){
-        scanf("%d", &arr_states[count].population);
+    while(scanf("%s", arr_states[count].name) && count < 10){
+        x = scanf("%d", &arr_states[count].population);
+	if(x == EOF)
+	    break;
         count++;
     }
     	
@@ -30,5 +32,5 @@ int main()
             printf("%s \n", arr_states[i].name);
         }
     }
-    printf("^D");
+
 }
