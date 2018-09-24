@@ -14,31 +14,26 @@
 int main(){
     int p[2];
     pid_t pid;
+    pipe(p);
+    pid = fork();
     
-    if(pipe(p) == -1){
-        perror("pipe call");
+    if(pid < 0){                            //error
+        perror("fork");
         exit(1);
     }
-    
-    switch(pid = fork()){
-        case -1:
-            perror("fork call");
-            exit(2);
-        case 0:
-            close(1);
-            dup(p[1]);
-            close(p[0]);
-            close(p[1]);
-            execl("./pre.c", "pre.c", (char *)0);
-            perror("execl() failed!");
-            return(EXIT_FAILURE);
-        default:
-            close(0);
-            dup(p[0]);
-            close(p[0]);
-            close(p[1]);
-            execl("./sort.c", "sort.c", (char *)0);
-            return(EXIT_FAILURE);
+    else if(pid == 0){                      //child
+        close(1);
+        dup(p[1]);                          //redirect std output
+        close(p[0]);                        //closes read-descriptor
+        close(p[1]);                        //closes write-descriptor
+        perror("execl() failed!");
+        execl("/Users/kianamcdaniel/Desktop/pre.c", "pre.c", (char *)0);
     }
-    
+    else{                                   //parent
+        close(0);
+        dup(p[0]);                          //redirect std input
+        close(p[0]);                        //closes read-descriptor
+        close(p[1]);                        //closes write-descriptor
+        execl("/Users/kianamcdaniel/Desktop/sort.c", "sort.c", (char *)0);
+    }
 }
