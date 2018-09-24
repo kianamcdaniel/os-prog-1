@@ -20,7 +20,7 @@ please follow the steps below to run my program & check it's functionality!
     
     - where 'TX' is the states abbreviation and '189' is the states population in million. 
     - to enter another input simply press 'return' key and enter the information
-    - once you are done entering the information press '0'
+    - once you are done entering the information **press ctrl+d TWICE!!!**
     - Input looks something like this: 
         - TX 189
         - FL 20
@@ -28,5 +28,5 @@ please follow the steps below to run my program & check it's functionality!
         - AL 100
         - 0
 
-8) once '0' is pressed, a list of states whose population is greater than 10 million will appear. The states will be sorted in alphabetical order. 
+8) once **ctrl+d** is pressed **TWICE**, a list of states whose population is greater than 10 million will appear. The states will be sorted in alphabetical order. 
     
