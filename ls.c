@@ -12,7 +12,7 @@
 #include <stdlib.h>
 
 int main (int argc, char *argv[]){
-    char *command;
+
     int p[2];
     int count = 0;
     pid_t pid;
