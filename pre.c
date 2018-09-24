@@ -20,7 +20,7 @@ int main()
     int count = 0;
     	
     while(scanf("%s", arr_states[count].name)
-          && (arr_states[count].name != eof) && count < 10){
+          && (arr_states[count].name != EOF) && count < 10){
         scanf("%d", &arr_states[count].population);
         count++;
     }
